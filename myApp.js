@@ -18,8 +18,9 @@ app.get("/",
 });
 
 app.get("/json",
+function(req, res) {
     res.json({"message": "Hello json"})
-);
+});
 
 console.log("Hello World")
 
